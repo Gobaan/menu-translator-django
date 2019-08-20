@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<p><a class="btn btn-default" href="{% url 'translator_website_list' %}">Website Listing</a></p>
+<table class="table">
+<tr><td>slug</td><td>{{ object.slug }}</td></tr>
+<tr><td>created</td><td>{{ object.created }}</td></tr>
+<tr><td>last_updated</td><td>{{ object.last_updated }}</td></tr>
+<tr><td>URL</td><td>{{ object.URL }}</td></tr>
+<tr><td>cache_path</td><td>{{ object.cache_path }}</td></tr>
+</table>
+<a class="btn btn-primary" href="{{object.get_update_url}}">Edit Website</a>
+
+{% endblock %}

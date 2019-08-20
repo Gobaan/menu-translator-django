@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<p><a class="btn btn-default" href="{% url 'translator_annotation_list' %}">Annotation Listing</a></p>
+<table class="table">
+<tr><td>slug</td><td>{{ object.slug }}</td></tr>
+<tr><td>created</td><td>{{ object.created }}</td></tr>
+<tr><td>last_updated</td><td>{{ object.last_updated }}</td></tr>
+<tr><td>text</td><td>{{ object.text }}</td></tr>
+<tr><td>annotates_source</td><td>{{ object.annotates_source }}</td></tr>
+</table>
+<a class="btn btn-primary" href="{{object.get_update_url}}">Edit Annotation</a>
+
+{% endblock %}

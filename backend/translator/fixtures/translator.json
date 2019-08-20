@@ -1,0 +1,91 @@
+[{
+  "model": "translator.Annotation",
+  "pk": 1,
+  "fields": {
+    "text": "Pho",
+    "annotates_source_language": "True",
+    "creator": 7,
+    "last_updated": "2019-07-31 11:33:59.553247+00:00",
+    "clip": 2,
+    "language_id": 5
+  }
+}, {
+  "model": "translator.Clip",
+  "pk": 2,
+  "fields": {
+    "bounding_box": "[(30, 30), (20, 20), (10, 10), (5, 5)]",
+    "image": 4,
+    "last_updated": "2019-07-31 11:33:59.553247+00:00",
+    "creator": 7
+  }
+
+}, {
+  "model": "translator.Food",
+  "pk": 3,
+  "fields": {
+    "name": "Pho",
+    "language": 5,
+    "thumbnails": [8],
+    "last_updated": "2019-07-31 11:33:59.553247+00:00",
+    "creator": 7
+  }
+}, {
+  "model": "translator.Image",
+  "pk": 4,
+  "fields": {
+    "creator": 7,
+    "cloud_URL": "www.google.com/[TODO:Insert Image Here]",
+    "filesize": 300000,
+    "longitude": 32131,
+    "latitude": 501831,
+    "width": 1231,
+    "height": 1211,
+    "last_updated": "2019-07-31 11:33:59.553247+00:00",
+    "original_image": 4
+  }
+}, {
+  "model": "translator.Image",
+  "pk": 8,
+  "fields": {
+    "cloud_URL": "gobaan.com",
+    "filesize": 3000,
+    "longitude": 0,
+    "latitude": 0,
+    "width": 86,
+    "height": 86,
+    "last_updated": "2019-07-31 11:33:59.553247+00:00",
+    "original_image": 4
+  }
+}, {
+  "model": "translator.Language",
+  "pk": 5,
+  "fields": {
+    "name": "English (United States)",
+    "last_updated": "2019-07-31 11:33:59.553247+00:00",
+    "short_name": "en-us"
+  }
+}, {
+  "model": "translator.Website",
+  "pk": 6,
+  "fields": {
+    "URL": "www.recipes.com",
+    "cache_path": "google.com/cloud_url",
+    "last_updated": "2019-07-31 11:33:59.553247+00:00",
+    "food": 3
+  }
+}, {
+  "model": "translator.UserProfile",
+  "pk": 7,
+  "fields": {
+    "user": 9,
+    "category": "google-api",
+    "last_updated": "2019-07-31 11:33:59.553247+00:00"
+  }
+}, {
+  "model": "auth.user",
+  "pk": 9,
+  "fields": {
+    "username": "google-ocr",
+    "password": "theonetruepassword"
+  }
+}]

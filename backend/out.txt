@@ -1,0 +1,14 @@
+class Annotation(models.Model):
+    class Meta:
+class Clip(models.Model):
+    class Meta:
+class Food(models.Model):
+    class Meta:
+class Image(models.Model):
+    class Meta:
+class Language(models.Model):
+    class Meta:
+class Website(models.Model):
+    class Meta:
+class UserProfile(models.Model):
+    class Meta:
