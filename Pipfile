@@ -4,6 +4,8 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pytest = "*"
+coverage = "==5.0a5"
 
 [packages]
 django-debug-toolbar = "*"
@@ -13,6 +15,9 @@ django = ">=2.2.1"
 django-filter = ">=2.1.0"
 graphene-django = ">=2.2.0"
 model-mommy = "*"
+djangorestframework = "*"
+django-extensions = "*"
+graphene-file-upload = "*"
 
 [requires]
 python_version = "3.6"
